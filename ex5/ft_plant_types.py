@@ -33,7 +33,7 @@ class Plant:
             print("Height update rejected")
         else:
             self._height = height
-            print(f"Height updated: {self._height}cm")
+            print(f"Height updated: {int(self._height)}cm")
 
 
 class Flower(Plant):
@@ -66,7 +66,7 @@ class Tree(Plant):
 
     def produce_shade(self) -> None:
         print(f"Tree {self._name} now produce a shade of {self._height}cm "
-              f"and {self._trunk_diameter}cm wide.")
+              f"long and {self._trunk_diameter}cm wide.")
 
 
 class Vegetable(Plant):

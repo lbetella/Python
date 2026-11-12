@@ -108,7 +108,7 @@ class Tree(Plant):
 
     def shade(self) -> None:
         print(f"Tree {self._name} now produce a shade of {self._height}cm "
-              f"and {self._trunk_diameter}cm wide.")
+              f"long and {self._trunk_diameter}cm wide.")
         self._statics.add_shade()
 
 
@@ -187,7 +187,7 @@ def main() -> None:
     print(f"{oak._statics._shade_counter} shade")
     print()
     print("=== Seed")
-    sunflower_seed = Seed("Sunflower", 80.0, 45, "yelflake8low")
+    sunflower_seed = Seed("Sunflower", 80.0, 45, "yellow")
     sunflower_seed.show()
     print("[make sunflower grow, age and bloom]")
     sunflower_seed.grow()
